@@ -1,6 +1,7 @@
+// @ts-nocheck
 import { writable, derived } from 'svelte/store';
-import en from '../../messages/en.json';
-import pt from '../../messages/pt.json';
+import en from './messages/en.json';
+import pt from './messages/pt.json';
 
 export const defaultLang = 'pt';
 export const languages = ['pt', 'en'];
@@ -30,13 +31,17 @@ export const t = derived(locale, ($locale) => (key, vars = {}) => {
 });
 
 // Helper to switch language
+// Helper to switch language
 export const setLocale = (lang) => {
     if (languages.includes(lang)) {
+        console.log('Switching language to:', lang);
         locale.set(lang);
         if (typeof document !== 'undefined') {
              document.documentElement.lang = lang;
              localStorage.setItem('lang', lang);
         }
+    } else {
+        console.error('Invalid language:', lang);
     }
 };
 

@@ -13,7 +13,7 @@
     "nav_contact": "Contactos",
 
     "intro_title": "Introdução",
-    "intro_p1": "O presente documento apresenta o conceito de um parque natural que respeita o património natural e proporciona experiências imersivas na natureza, com componentes proactivas, educativas e recreativas.",
+    "intro_p1": "Este website apresenta o conceito de um parque natural que respeita o património natural e proporciona experiências imersivas na natureza, com componentes proactivas, educativas e recreativas.",
     "intro_p2": "A idealização e criação deste projeto advém da necessidade de poder oferecer um espaço de atividades na natureza de forma lúdica, recreativa e sustentável.",
     "intro_p3": "Um projeto que considera a integração de duas vertentes sociais, estabelecendo relação entre o sector turístico e a comunidade local.",
     "intro_p4": "A pertinência deste projeto “Parque de Natureza e Aventura” é a aprendizagem através do contacto direto com a natureza, através de uma experiência sensorial que explore o espaço rural através dos sentidos, desenvolvendo atividades que envolvam a visão, o toque, a audição, o olfato e o movimento.",
@@ -33,6 +33,9 @@
     "obj_list_8": "Proporcionar um espaço recreativo recorrendo a elementos e materiais de construção ecológicos.",
 
     "activities_title": "Atividades do Parque",
+    "activities_subtitle": "Experiências únicas que conectam o visitante com a natureza de forma ativa e educativa.",
+    
+    "act_highlight": "Destaque",
     
     "act_forest_title": "Plano de intervenção florestal",
     "act_forest_desc": "Previamente à intervenção no terreno, existirá um estudo de campo sobre a situação atual da flora e fauna para poder desenvolver o plano específico de intervenção florestal. Este plano não privilegia a exploração e a extração de árvores para fins comerciais, mas visa desenvolver projetos de manutenção, preservação e reconstrução do estado natural do terreno.",
@@ -82,5 +85,7 @@
     "terrain_desc": "Localizado na União de freguesias de Bensafrim e Barão de São João. Terreno rústico de 12,5 hectares com vegetação densa, sobreiros e medronheiros. O projeto visa a preservação e reflorestação.",
 
     "footer_contact": "Contactos",
-    "footer_address": "Bensafrim e Barão de São João, Lagos, Algarve"
+    "footer_address_label": "Morada",
+    "footer_address": "Bensafrim e Barão de São João, Lagos, Algarve",
+    "contact_location": "Localização"
 }

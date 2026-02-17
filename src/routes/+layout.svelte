@@ -4,50 +4,52 @@
 	import { page } from "$app/stores";
 </script>
 
-<div class="min-h-screen flex flex-col font-sans text-nature-900 bg-nature-50">
+<div
+	class="min-h-screen flex flex-col font-sans text-nature-900 bg-nature-50 selection:bg-nature-200 selection:text-nature-900"
+>
 	<header
-		class="fixed w-full z-50 bg-nature-50/90 backdrop-blur-sm border-b border-nature-200 transition-all duration-300"
+		class="fixed w-full z-50 bg-nature-50/80 backdrop-blur-md border-b border-nature-200/50 transition-all duration-300 shadow-sm"
 	>
 		<div
-			class="container mx-auto px-4 h-20 flex items-center justify-between"
+			class="container mx-auto px-6 h-24 flex items-center justify-between"
 		>
 			<a
 				href="/"
-				class="text-2xl font-display font-bold text-nature-800 tracking-tight"
+				class="text-3xl font-display font-bold text-nature-900 tracking-tight hover:opacity-80 transition-opacity"
 			>
 				Monte Mouro
 			</a>
 
-			<nav class="hidden md:flex items-center gap-8">
+			<nav class="hidden md:flex items-center gap-10">
 				<a
 					href="#intro"
-					class="text-sm font-medium hover:text-nature-600 transition-colors"
+					class="text-xs font-bold uppercase tracking-widest text-nature-600 hover:text-nature-900 transition-colors"
 					>{$t("nav_home")}</a
 				>
 				<a
 					href="#activities"
-					class="text-sm font-medium hover:text-nature-600 transition-colors"
+					class="text-xs font-bold uppercase tracking-widest text-nature-600 hover:text-nature-900 transition-colors"
 					>{$t("nav_activities")}</a
 				>
 				<a
 					href="#contact"
-					class="text-sm font-medium hover:text-nature-600 transition-colors"
+					class="text-xs font-bold uppercase tracking-widest text-nature-600 hover:text-nature-900 transition-colors"
 					>{$t("nav_contact")}</a
 				>
 			</nav>
 
 			<div class="flex items-center gap-4">
 				<div
-					class="flex items-center gap-2 text-sm font-medium bg-nature-100 rounded-full p-1"
+					class="flex items-center gap-1 text-xs font-bold bg-nature-100/50 rounded-full p-1 border border-nature-200"
 				>
 					{#each languages as lang}
 						<button
 							type="button"
 							on:click={() => setLocale(lang)}
-							class="px-3 py-1 rounded-full transition-colors {$locale ===
+							class="px-4 py-1.5 rounded-full transition-all duration-300 {$locale ===
 							lang
-								? 'bg-white shadow-sm text-nature-800'
-								: 'text-nature-500 hover:text-nature-700'}"
+								? 'bg-white shadow-sm text-nature-900'
+								: 'text-nature-400 hover:text-nature-600'}"
 						>
 							{lang.toUpperCase()}
 						</button>
@@ -57,25 +59,23 @@
 		</div>
 	</header>
 
-	<main class="flex-grow pt-20">
+	<main class="flex-grow pt-24">
 		<slot />
 	</main>
 
-	<footer class="bg-nature-900 text-nature-100 py-12">
-		<div class="container mx-auto px-4">
+	<footer class="bg-nature-950 text-nature-100 py-16">
+		<div class="container mx-auto px-6">
 			<div
-				class="flex flex-col md:flex-row justify-between items-center gap-6"
+				class="flex flex-col md:flex-row justify-between items-center gap-8 border-b border-nature-800 pb-12 mb-12"
 			>
 				<div class="text-center md:text-left">
-					<h3 class="font-display text-xl font-bold mb-2">
+					<h3
+						class="font-display text-3xl font-bold mb-3 text-nature-50"
+					>
 						{$t("hero_title")}
 					</h3>
-					<p class="text-nature-300">Monte Mouro, Algarve</p>
-				</div>
-				<div class="text-center md:text-right text-sm text-nature-400">
-					<p>
-						&copy; {new Date().getFullYear()} Uwe Reichelt. All rights
-						reserved.
+					<p class="text-nature-400 font-light tracking-wide">
+						Monte Mouro, Algarve, Portugal
 					</p>
 				</div>
 			</div>

@@ -79,34 +79,35 @@
 <section
     class="relative h-screen flex items-center justify-center overflow-hidden bg-nature-900 text-nature-50"
 >
+    <!-- Darker, richer overlay -->
     <div
-        class="absolute inset-0 bg-gradient-to-b from-black/60 to-nature-900/90 z-10"
-    ></div>
-    <!-- Placeholder for hero background image -->
-    <div
-        class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=2074&auto=format&fit=crop')] bg-cover bg-center opacity-40"
+        class="absolute inset-0 bg-gradient-to-b from-nature-950/40 via-nature-900/10 to-nature-900 z-10"
     ></div>
 
-    <div class="relative z-20 text-center px-4 max-w-4xl mx-auto space-y-6">
+    <!-- Background Image -->
+    <div
+        class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=2074&auto=format&fit=crop')] bg-cover bg-center opacity-50 scale-105 animate-pulse-slow"
+    ></div>
+
+    <div class="relative z-20 text-center px-4 max-w-5xl mx-auto space-y-8">
         {#if visible}
-            <h1
-                in:fly={{ y: 50, duration: 1000 }}
-                class="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-tight"
-            >
-                {$t("hero_title")}
-                <span
-                    class="block text-nature-400 text-3xl md:text-5xl mt-2 font-light italic"
-                    >{$t("hero_subtitle")}</span
+            <div in:fly={{ y: 30, duration: 1200, delay: 0 }}>
+                <h1
+                    class="font-display text-5xl md:text-7xl lg:text-9xl font-bold tracking-tight leading-none text-white drop-shadow-lg"
                 >
-            </h1>
-            <p
-                in:fly={{ y: 50, duration: 1000, delay: 300 }}
-                class="text-xl md:text-2xl text-nature-200 font-light tracking-wide"
-            ></p>
-            <div in:fly={{ y: 50, duration: 1000, delay: 600 }} class="pt-8">
+                    {$t("hero_title")}
+                </h1>
+                <p
+                    class="font-display italic text-2xl md:text-4xl text-nature-200 mt-4 font-light tracking-wide lg:mt-6"
+                >
+                    {$t("hero_subtitle")}
+                </p>
+            </div>
+
+            <div in:fly={{ y: 30, duration: 1200, delay: 500 }} class="pt-10">
                 <a
                     href="#intro"
-                    class="inline-block bg-nature-500 hover:bg-nature-400 text-white font-semibold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-nature-500/50"
+                    class="inline-block bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold text-sm tracking-widest uppercase py-4 px-12 rounded-full transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]"
                 >
                     {$t("hero_cta")}
                 </a>
@@ -116,63 +117,80 @@
 </section>
 
 <!-- Introduction -->
-<section id="intro" class="py-24 bg-nature-50 relative overflow-hidden">
-    <div class="container mx-auto px-4 max-w-5xl">
-        <div class="grid md:grid-cols-12 gap-12 items-start">
-            <div class="md:col-span-4">
+<section id="intro" class="py-32 bg-earth-50 relative overflow-hidden">
+    <div class="container mx-auto px-6 max-w-5xl">
+        <div class="grid md:grid-cols-12 gap-8 md:gap-16 items-start">
+            <div class="md:col-span-4 md:sticky md:top-32">
                 <h2
-                    class="text-4xl md:text-5xl font-display font-bold text-nature-900 mb-6 sticky top-24"
+                    class="text-4xl md:text-6xl font-display font-medium text-nature-900 mb-8 leading-tight"
                 >
                     {$t("intro_title")}
                 </h2>
+                <div class="w-24 h-1 bg-nature-400 -mt-6"></div>
             </div>
             <div
-                class="md:col-span-8 space-y-6 text-lg text-nature-800 leading-relaxed font-light"
+                class="md:col-span-8 space-y-8 text-lg md:text-xl text-nature-800/80 leading-relaxed font-light"
             >
                 <p
-                    class="first-letter:text-5xl first-letter:font-display first-letter:font-bold first-letter:text-nature-600 first-letter:mr-2 float-left"
+                    class="text-lg md:text-xl text-nature-800/80 leading-relaxed font-light"
                 >
-                    {$t("intro_p1")}
+                    <span
+                        class="font-display text-6xl md:text-7xl float-left mr-3 md:mr-4 leading-[0.8] text-nature-900 mt-1"
+                    >
+                        {$t("intro_p1").slice(0, 1)}
+                    </span>
+                    {$t("intro_p1").slice(1)}
                 </p>
                 <p>{$t("intro_p2")}</p>
                 <p>{$t("intro_p3")}</p>
+
                 <div
-                    class="bg-white p-8 rounded-2xl shadow-sm border border-nature-100 my-8"
+                    class="bg-white p-10 rounded-r-3xl border-l-4 border-nature-400 shadow-xl shadow-nature-100 my-12"
                 >
-                    <p class="font-medium text-nature-900 italic">
+                    <p
+                        class="font-display text-2xl text-nature-800 italic leading-relaxed"
+                    >
                         "{$t("intro_p4")}"
                     </p>
                 </div>
+
                 <p>{$t("intro_p5")}</p>
                 <p>{$t("intro_p6")}</p>
                 <p>{$t("intro_p7")}</p>
-                <p class="font-semibold text-nature-700">{$t("intro_p8")}</p>
+                <p
+                    class="font-medium text-nature-900 text-xl border-t border-nature-200 pt-8"
+                >
+                    {$t("intro_p8")}
+                </p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Objectives -->
-<section class="py-24 bg-earth-100 text-earth-900">
-    <div class="container mx-auto px-4 max-w-6xl">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-display font-bold mb-4">
+<section class="py-32 bg-nature-100 text-nature-900 relative">
+    <div class="container mx-auto px-6 max-w-7xl">
+        <div class="text-center mb-24 max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">
                 {$t("obj_title")}
             </h2>
-            <div class="w-24 h-1 bg-earth-400 mx-auto rounded-full"></div>
+            <div
+                class="w-24 h-1 bg-nature-400 mx-auto rounded-full -mt-4"
+            ></div>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-x-12 gap-y-8">
-            {#each ["obj_list_1", "obj_list_2", "obj_list_3", "obj_list_4", "obj_list_5", "obj_list_6", "obj_list_7", "obj_list_8"] as objKey}
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {#each ["obj_list_1", "obj_list_2", "obj_list_3", "obj_list_4", "obj_list_5", "obj_list_6", "obj_list_7", "obj_list_8"] as objKey, i}
                 <div
-                    class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/50 transition-colors duration-300"
+                    class="group p-8 bg-white/60 hover:bg-white transition-all duration-500 rounded-3xl hover:shadow-xl hover:-translate-y-2 border border-nature-200/50"
                 >
-                    <div
-                        class="mt-1 w-6 h-6 rounded-full bg-earth-400 flex-shrink-0 flex items-center justify-center text-white text-xs"
+                    <span
+                        class="inline-block text-nature-300 font-display text-4xl mb-4 group-hover:text-nature-600 transition-colors"
+                        >0{i + 1}</span
                     >
-                        ✓
-                    </div>
-                    <p class="text-lg">{$t(objKey)}</p>
+                    <p class="text-lg font-medium leading-relaxed">
+                        {$t(objKey)}
+                    </p>
                 </div>
             {/each}
         </div>
@@ -180,56 +198,66 @@
 </section>
 
 <!-- Activities -->
-<section id="activities" class="py-24 bg-nature-950 text-nature-50">
-    <div class="container mx-auto px-4 max-w-7xl">
-        <div class="text-center mb-20">
-            <h2 class="text-4xl md:text-6xl font-display font-bold mb-6">
-                {$t("activities_title")}
-            </h2>
-            <p class="max-w-2xl mx-auto text-nature-300 text-lg">
-                Experiências únicas que conectam o visitante com a natureza de
-                forma ativa e educativa.
+<section id="activities" class="py-32 bg-nature-950 text-nature-50">
+    <div class="container mx-auto px-6 max-w-7xl">
+        <div
+            class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8"
+        >
+            <div>
+                <h2 class="text-5xl md:text-7xl font-display font-medium mb-6">
+                    {$t("activities_title")}
+                </h2>
+                <div class="h-1 w-32 bg-nature-500 rounded-full -mt-4"></div>
+            </div>
+            <p
+                class="md:max-w-md text-nature-300 text-lg leading-relaxed text-right"
+            >
+                {$t("activities_subtitle")}
             </p>
         </div>
 
         <!-- Specical Highlight: Forest Plan -->
         <div
-            class="mb-24 bg-nature-900 rounded-3xl p-8 md:p-12 border border-nature-800 relative overflow-hidden"
+            class="mb-12 bg-gradient-to-br from-nature-900 to-nature-950 rounded-[3rem] p-10 md:p-16 border border-nature-800 relative overflow-hidden group"
         >
-            <div class="relative z-10 md:w-2/3">
+            <div class="relative z-10 md:w-3/4">
+                <span
+                    class="text-nature-400 text-sm font-bold tracking-widest uppercase mb-4 block"
+                    >{$t("act_highlight")}</span
+                >
                 <h3
-                    class="text-3xl font-display font-bold mb-4 text-nature-200"
+                    class="text-4xl md:text-5xl font-display font-bold mb-6 text-white"
                 >
                     {$t("act_forest_title")}
                 </h3>
-                <p class="text-lg text-nature-300 leading-relaxed">
+                <p class="text-xl text-nature-300 leading-relaxed max-w-3xl">
                     {$t("act_forest_desc")}
                 </p>
             </div>
             <div
-                class="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-nature-800/50 to-transparent hidden md:block"
+                class="absolute -right-20 -bottom-20 w-96 h-96 bg-nature-500/10 rounded-full blur-3xl group-hover:bg-nature-500/20 transition-all duration-1000"
             ></div>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {#each activities as activity}
                 <div
-                    class="group bg-nature-900 rounded-2xl p-8 border border-nature-800 hover:border-nature-600 transition-all duration-300 hover:shadow-2xl hover:shadow-nature-900/50 hover:-translate-y-1"
+                    class="group bg-nature-900/50 rounded-3xl p-10 border border-nature-800 hover:border-nature-600 transition-all duration-500 hover:bg-nature-900 hover:shadow-2xl hover:shadow-nature-900/50"
                 >
                     <div
-                        class="w-12 h-12 rounded-xl bg-nature-800 text-nature-300 flex items-center justify-center mb-6 group-hover:bg-nature-600 group-hover:text-white transition-colors"
+                        class="w-16 h-16 rounded-2xl bg-nature-800 text-nature-300 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-nature-700 group-hover:text-white transition-all duration-500"
                     >
                         <!-- Icon placeholder -->
                         <div
-                            class="w-6 h-6 bg-current rounded-sm opacity-50"
+                            class="w-8 h-8 rounded-full border-2 border-current opacity-60"
                         ></div>
                     </div>
                     <h3
-                        class="text-2xl font-display font-bold mb-3 text-nature-100"
+                        class="text-2xl font-display font-bold mb-4 text-nature-100 group-hover:text-white transition-colors"
                     >
                         {$t(activity.titleKey)}
                     </h3>
-                    <p class="text-nature-400 leading-relaxed">
+                    <p class="text-nature-400 leading-relaxed font-light">
                         {$t(activity.descKey)}
                     </p>
                 </div>
@@ -239,78 +267,115 @@
 </section>
 
 <!-- Services -->
-<section class="py-24 bg-white">
-    <div class="container mx-auto px-4 max-w-6xl">
+<section class="py-32 bg-earth-50">
+    <div class="container mx-auto px-6 max-w-7xl">
         <h2
-            class="text-4xl md:text-5xl font-display font-bold text-center mb-16 text-nature-900"
+            class="text-4xl md:text-5xl font-display font-bold text-center mb-24 text-nature-900"
         >
             {$t("services_title")}
         </h2>
 
         <div class="grid md:grid-cols-3 gap-12 text-center">
-            <div class="space-y-4">
+            <div class="space-y-6 group cursor-default">
                 <div
-                    class="h-48 w-full bg-earth-100 rounded-2xl mb-6 flex items-center justify-center"
+                    class="h-64 w-full bg-white rounded-t-[10rem] rounded-b-3xl mb-8 flex items-center justify-center shadow-lg shadow-earth-200/50 group-hover:-translate-y-4 transition-transform duration-500"
                 >
-                    <span class="text-earth-400 text-4xl">🍽️</span>
+                    <span
+                        class="text-7xl filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                        >🍽️</span
+                    >
                 </div>
-                <h3 class="text-2xl font-bold text-nature-800">
+                <h3 class="text-2xl font-display font-bold text-nature-900">
                     {$t("serv_restaurant_title")}
                 </h3>
-                <p class="text-nature-600">{$t("serv_restaurant_desc")}</p>
+                <p class="text-nature-600 px-8">{$t("serv_restaurant_desc")}</p>
             </div>
-            <div class="space-y-4">
+            <div class="space-y-6 group cursor-default">
                 <div
-                    class="h-48 w-full bg-earth-100 rounded-2xl mb-6 flex items-center justify-center"
+                    class="h-64 w-full bg-white rounded-t-[10rem] rounded-b-3xl mb-8 flex items-center justify-center shadow-lg shadow-earth-200/50 group-hover:-translate-y-4 transition-transform duration-500"
                 >
-                    <span class="text-earth-400 text-4xl">🧺</span>
+                    <span
+                        class="text-7xl filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                        >🧺</span
+                    >
                 </div>
-                <h3 class="text-2xl font-bold text-nature-800">
+                <h3 class="text-2xl font-display font-bold text-nature-900">
                     {$t("serv_picnic_title")}
                 </h3>
-                <p class="text-nature-600">{$t("serv_picnic_desc")}</p>
+                <p class="text-nature-600 px-8">{$t("serv_picnic_desc")}</p>
             </div>
-            <div class="space-y-4">
+            <div class="space-y-6 group cursor-default">
                 <div
-                    class="h-48 w-full bg-earth-100 rounded-2xl mb-6 flex items-center justify-center"
+                    class="h-64 w-full bg-white rounded-t-[10rem] rounded-b-3xl mb-8 flex items-center justify-center shadow-lg shadow-earth-200/50 group-hover:-translate-y-4 transition-transform duration-500"
                 >
-                    <span class="text-earth-400 text-4xl">🔭</span>
+                    <span
+                        class="text-7xl filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                        >🔭</span
+                    >
                 </div>
-                <h3 class="text-2xl font-bold text-nature-800">
+                <h3 class="text-2xl font-display font-bold text-nature-900">
                     {$t("serv_viewpoints_title")}
                 </h3>
-                <p class="text-nature-600">{$t("serv_viewpoints_desc")}</p>
+                <p class="text-nature-600 px-8">{$t("serv_viewpoints_desc")}</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Terrain / Contact -->
-<section id="contact" class="py-24 bg-nature-100">
-    <div class="container mx-auto px-4 max-w-5xl text-center md:text-left">
-        <div class="bg-white rounded-3xl p-8 md:p-16 shadow-xl">
-            <div class="grid md:grid-cols-2 gap-12">
+<section id="contact" class="py-32 bg-nature-900 relative">
+    <div
+        class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-earth-50 to-transparent opacity-10"
+    ></div>
+
+    <div class="container mx-auto px-6 max-w-6xl relative z-10">
+        <div
+            class="bg-nature-50 rounded-[3rem] p-12 md:p-24 shadow-2xl relative overflow-hidden"
+        >
+            <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
+                    <span
+                        class="text-nature-500 font-bold tracking-widest uppercase text-sm mb-4 block"
+                        >{$t("contact_location")}</span
+                    >
                     <h2
-                        class="text-3xl font-display font-bold mb-6 text-nature-900"
+                        class="text-4xl md:text-5xl font-display font-bold mb-8 text-nature-900"
                     >
                         {$t("terrain_title")}
                     </h2>
-                    <p class="text-nature-700 leading-relaxed mb-6">
+                    <p
+                        class="text-nature-700 text-lg leading-relaxed mb-10 font-light"
+                    >
                         {$t("terrain_desc")}
                     </p>
-                    <div class="space-y-2 text-nature-600">
-                        <p>
-                            <strong>{$t("footer_contact")}:</strong> Uwe Reichelt
-                        </p>
-                        <p>{$t("footer_address")}</p>
+
+                    <div class="space-y-4 pt-8 border-t border-nature-200">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-6 h-6 rounded-full bg-nature-200 mt-1"
+                            ></div>
+                            <div>
+                                <p
+                                    class="font-bold text-nature-900 uppercase tracking-wide text-xs mb-1"
+                                >
+                                    {$t("footer_contact")}
+                                </p>
+                                <p class="text-nature-600">Uwe Reichelt</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div
-                    class="bg-nature-200 rounded-2xl h-64 md:h-auto min-h-[300px] flex items-center justify-center text-nature-500"
+                    class="bg-nature-200 rounded-[2rem] h-96 w-full flex items-center justify-center text-nature-500 shadow-inner overflow-hidden relative group"
                 >
-                    <!-- Map Placeholder -->
-                    <span>Map Area</span>
+                    <!-- Map Placeholder with interaction hint -->
+                    <span
+                        class="relative z-10 group-hover:scale-110 transition-transform duration-300"
+                        >Map Area (Google Maps Embed)</span
+                    >
+                    <div
+                        class="absolute inset-0 bg-nature-300/20 group-hover:bg-transparent transition-colors duration-500"
+                    ></div>
                 </div>
             </div>
         </div>

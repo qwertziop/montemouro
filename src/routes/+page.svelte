@@ -368,14 +368,17 @@
                 <div
                     class="bg-nature-200 rounded-[2rem] h-96 w-full flex items-center justify-center text-nature-500 shadow-inner overflow-hidden relative group"
                 >
-                    <!-- Map Placeholder with interaction hint -->
-                    <span
-                        class="relative z-10 group-hover:scale-110 transition-transform duration-300"
-                        >Map Area (Google Maps Embed)</span
-                    >
-                    <div
-                        class="absolute inset-0 bg-nature-300/20 group-hover:bg-transparent transition-colors duration-500"
-                    ></div>
+                    <iframe
+                        title="Google Maps Location"
+                        src="https://maps.google.com/maps?q=37.174012,-8.753882&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="absolute inset-0 w-full h-full filter grayscale hover:grayscale-0 transition-all duration-700"
+                    ></iframe>
                 </div>
             </div>
         </div>

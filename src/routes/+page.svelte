@@ -119,7 +119,7 @@
 <!-- Introduction -->
 <section id="intro" class="py-32 bg-earth-50 relative overflow-hidden">
     <div class="container mx-auto px-6 max-w-5xl">
-        <div class="grid md:grid-cols-12 gap-8 md:gap-16 items-start">
+        <div class="grid md:grid-cols-12 gap-12 md:gap-24 items-start">
             <div class="md:col-span-4 md:sticky md:top-32">
                 <h2
                     class="text-4xl md:text-6xl font-display font-medium text-nature-900 mb-8 leading-tight"
@@ -135,7 +135,7 @@
                     class="text-lg md:text-xl text-nature-800/80 leading-relaxed font-light"
                 >
                     <span
-                        class="font-display text-6xl md:text-7xl float-left mr-3 md:mr-4 leading-[0.8] text-nature-900 mt-1"
+                        class="font-display text-6xl md:text-7xl float-left mr-3 md:mr-4 leading-[0.8] text-nature-900 mt-0"
                     >
                         {$t("intro_p1").slice(0, 1)}
                     </span>

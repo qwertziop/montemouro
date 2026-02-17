@@ -1,0 +1,87 @@
+{
+    "meta_title": "Parque de Natureza e Aventura de Monte Mouro",
+    "meta_description": "Um parque natural que respeita o património natural e proporciona experiências imersivas na natureza no Algarve.",
+    
+    "hero_title": "Parque de Natureza e Aventura",
+    "hero_subtitle": "de Monte Mouro",
+    "hero_author": "Uwe Reichelt 2021",
+    "hero_cta": "Explorar o Parque",
+    
+    "nav_home": "Início",
+    "nav_intro": "Introdução",
+    "nav_objectives": "Objetivos",
+    "nav_activities": "Atividades",
+    "nav_contact": "Contactos",
+
+    "intro_title": "Introdução",
+    "intro_p1": "O presente documento apresenta o conceito de um parque natural que respeita o património natural e proporciona experiências imersivas na natureza, com componentes proactivas, educativas e recreativas.",
+    "intro_p2": "A idealização e criação deste projeto advém da necessidade de poder oferecer um espaço de atividades na natureza de forma lúdica, recreativa e sustentável.",
+    "intro_p3": "Um projeto que considera a integração de duas vertentes sociais, estabelecendo relação entre o sector turístico e a comunidade local.",
+    "intro_p4": "A pertinência deste projeto “Parque de Natureza e Aventura” é a aprendizagem através do contacto direto com a natureza, através de uma experiência sensorial que explore o espaço rural através dos sentidos, desenvolvendo atividades que envolvam a visão, o toque, a audição, o olfato e o movimento.",
+    "intro_p5": "O “Parque de Natureza e Aventura” está direcionado ao público em geral, a exploradores de todas as idades: pais, filhos e avós.",
+    "intro_p6": "Este projeto torna-se relevante pela capacidade de integrar atividades que façam parte de projetos educativos de escolas, jardins de infância, bem como de outras instituições ou associações, possibilitando uma parceria pedagógica.",
+    "intro_p7": "Desta forma, pretende-se criar uma rede de ensino através da natureza e oferecer métodos de exploração da flora e fauna local de uma forma proactiva e especial, estimulando o interesse pela observação e conhecimento da natureza e sensibilizando os visitantes para uma experiência única, natural e holística nesta região rural do Algarve.",
+    "intro_p8": "Ambiciona-se que o desenvolvimento desta rede fortaleça a criação de uma empresa autónoma e sustentável de animação turística com o selo do turismo de natureza português.",
+
+    "obj_title": "Objetivos",
+    "obj_list_1": "Preservar e respeitar a natureza nas suas qualidades naturais.",
+    "obj_list_2": "Recuperar as características naturais do terreno, através de planos de reflorestação.",
+    "obj_list_3": "Educar e estimular a consciência sobre a natureza e as suas possibilidades na atividade social e desenvolvimento pessoal.",
+    "obj_list_4": "Diversificar e elaborar uma oferta inovadora de turismo na região do Algarve.",
+    "obj_list_5": "Desenvolver e instalar elementos de recreação inofensivos para a natureza.",
+    "obj_list_6": "Enriquecer o sector turístico da natureza na região, impulsionando a economia local.",
+    "obj_list_7": "Desenvolver metodologias pedagógicas de prevenção contra os incêndios sensibilizando a população para a existência de medidas preventivas.",
+    "obj_list_8": "Proporcionar um espaço recreativo recorrendo a elementos e materiais de construção ecológicos.",
+
+    "activities_title": "Atividades do Parque",
+    
+    "act_forest_title": "Plano de intervenção florestal",
+    "act_forest_desc": "Previamente à intervenção no terreno, existirá um estudo de campo sobre a situação atual da flora e fauna para poder desenvolver o plano específico de intervenção florestal. Este plano não privilegia a exploração e a extração de árvores para fins comerciais, mas visa desenvolver projetos de manutenção, preservação e reconstrução do estado natural do terreno.",
+
+    "act_zipline_title": "Percurso de tirolesas",
+    "act_zipline_desc": "Um conjunto de várias tirolesas com o comprimento variável entre 90 e 250 metros e com altura máxima de 30 metros. O equipamento é certificado e com impacto nulo na sua instalação. Estimula a autoestima, comunicação e superação de medos.",
+
+    "act_rally_title": "RallyPaper",
+    "act_rally_desc": "Os participantes terão acesso a uma aplicação para smartphone com pistas e mapas para a “Caça do tesouro”. Desenvolve a orientação espacial e a interpretação de mapas relacionados com flora, fauna, geologia e história.",
+
+    "act_arborism_title": "Arborismo",
+    "act_arborism_desc": "Circuito de pontes suspensas e estruturas ao nível das árvores. Atividade adequada a qualquer faixa etária que estimula autoconfiança, coordenação e equilíbrio.",
+
+    "act_hiking_title": "Percursos Pedestres",
+    "act_hiking_desc": "Trilhos bem sinalizados para exploração da biodiversidade, com pontos de descanso e miradouros. Veículo pedagógico de consciencialização e desporto na natureza.",
+
+    "act_botanic_title": "Percurso Botânico",
+    "act_botanic_desc": "Roteiro pedestre curto com identificação de espécies da flora local. Integra projetos educativos como herbários e observação direta das plantas.",
+
+    "act_fire_title": "Percurso de Prevenção de Incêndios",
+    "act_fire_desc": "Sensibilização para a prevenção de incêndios florestais. Inclui sistema silvo pastoril com cabras para redução de combustível.",
+
+    "act_marbles_title": "Berlindes Gigantes",
+    "act_marbles_desc": "Jogo com berlindes gigantes aproveitando a inclinação natural do terreno, sem materiais artificiais.",
+
+    "act_maze_title": "Labirinto",
+    "act_maze_desc": "Labirinto de vegetação natural (esteva) numa área de 1 hectare, desafiando o sentido de orientação.",
+
+    "act_slides_title": "Escorregas",
+    "act_slides_desc": "Escorregas tubulares transparentes (secos) até 125m que atravessam a floresta.",
+
+    "act_kids_title": "Parque Infantil",
+    "act_kids_desc": "Área recreativa de 200m² com elementos de madeira para crianças e pré-adolescentes.",
+
+    "services_title": "Serviços e Infraestruturas",
+    
+    "serv_restaurant_title": "Restaurante Móvel",
+    "serv_restaurant_desc": "Área de lazer com conceito street food sustentável, minimizando resíduos.",
+    
+    "serv_picnic_title": "Parque de Merendas",
+    "serv_picnic_desc": "Área para grupos e famílias com mesas, bancos e locais para churrasco.",
+    
+    "serv_viewpoints_title": "Miradouros",
+    "serv_viewpoints_desc": "Locais de descanso e contemplação com sombra.",
+
+    "terrain_title": "O Terreno",
+    "terrain_desc": "Localizado na União de freguesias de Bensafrim e Barão de São João. Terreno rústico de 12,5 hectares com vegetação densa, sobreiros e medronheiros. O projeto visa a preservação e reflorestação.",
+
+    "footer_contact": "Contactos",
+    "footer_address": "Bensafrim e Barão de São João, Lagos, Algarve"
+}

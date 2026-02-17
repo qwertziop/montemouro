@@ -1,0 +1,87 @@
+{
+    "meta_title": "Monte Mouro Nature and Adventure Park",
+    "meta_description": "A nature park that respects natural heritage and provides immersive nature experiences in the Algarve.",
+    
+    "hero_title": "Nature and Adventure Park",
+    "hero_subtitle": "of Monte Mouro",
+    "hero_author": "Uwe Reichelt 2021",
+    "hero_cta": "Explore the Park",
+    
+    "nav_home": "Home",
+    "nav_intro": "Introduction",
+    "nav_objectives": "Objectives",
+    "nav_activities": "Activities",
+    "nav_contact": "Contact",
+
+    "intro_title": "Introduction",
+    "intro_p1": "This document presents the concept of a natural park that respects natural heritage and provides immersive nature experiences, with proactive, educational, and recreational components.",
+    "intro_p2": "The idealization and creation of this project stems from the need to offer a space for nature activities in a playful, recreational, and sustainable way.",
+    "intro_p3": "A project that considers the integration of two social aspects, establishing a relationship between the tourism sector and the local community.",
+    "intro_p4": "The relevance of this project “Nature and Adventure Park” is learning through direct contact with nature, through a sensory experience that explores the rural space through the senses, developing activities that involve sight, touch, hearing, smell, and movement.",
+    "intro_p5": "The “Nature and Adventure Park” is aimed at the general public, explorers of all ages: parents, children, and grandparents.",
+    "intro_p6": "This project becomes relevant due to its ability to integrate activities that are part of educational projects of schools, kindergartens, as well as other institutions or associations, enabling a pedagogical partnership.",
+    "intro_p7": "In this way, it is intended to create a teaching network through nature and offer methods of exploration of local flora and fauna in a proactive and special way, stimulating interest in observation and knowledge of nature and sensitizing visitors to a unique, natural, and holistic experience in this rural region of the Algarve.",
+    "intro_p8": "It is ambitious that the development of this network strengthens the creation of an autonomous and sustainable tourist animation company with the Portuguese nature tourism seal.",
+
+    "obj_title": "Objectives",
+    "obj_list_1": "Preserve and respect nature in its natural qualities.",
+    "obj_list_2": "Recover the natural characteristics of the land through reforestation plans.",
+    "obj_list_3": "Educate and stimulate awareness about nature and its possibilities in social activity and personal development.",
+    "obj_list_4": "Diversify and elaborate an innovative tourism offer in the Algarve region.",
+    "obj_list_5": "Develop and install recreation elements harmless to nature.",
+    "obj_list_6": "Enrich the nature tourism sector in the region, boosting the local economy.",
+    "obj_list_7": "Develop pedagogical methodologies for fire prevention, sensitizing the population to the existence of preventive measures.",
+    "obj_list_8": "Provide a recreational space using ecological construction elements and materials.",
+
+    "activities_title": "Park Activities",
+    
+    "act_forest_title": "Forest Intervention Plan",
+    "act_forest_desc": "Prior to intervention on the land, there will be a field study on the current situation of flora and fauna to develop the specific forest intervention plan. This plan does not privilege the exploitation and extraction of trees for commercial purposes, but aims to develop maintenance, preservation, and reconstruction projects of the natural state of the land.",
+
+    "act_zipline_title": "Zipline Course",
+    "act_zipline_desc": "A set of various ziplines with lengths varying between 90 and 250 meters and a maximum height of 30 meters. The equipment is certified with total safety and zero impact on its installation on the ground. It stimulates self-esteem, communication, and overcoming fear.",
+
+    "act_rally_title": "RallyPaper",
+    "act_rally_desc": "Participants will have access to a smartphone app that provides information, clues, and maps for the “Treasure Hunt”. It develops spatial orientation and the interpretation of maps related to flora, fauna, geology, and history.",
+
+    "act_arborism_title": "Tree Climbing / Arborism",
+    "act_arborism_desc": "It is intended to develop a circuit that passes through different structures, such as suspension bridges at tree level. An activity suitable for any age group that stimulates self-confidence, coordination, and balance.",
+
+    "act_hiking_title": "Walking Trails",
+    "act_hiking_desc": "Well-signposted trails offering different viewpoints leading to the detailed exploration of biodiversity in the region, with rest points. Strongly associated with the concept of sport in nature and pedagogical awareness.",
+
+    "act_botanic_title": "Botanical Route",
+    "act_botanic_desc": "Short walking route with informative signs identifying local flora species. Integrates educational projects such as the botanical book, herbarium, and map.",
+
+    "act_fire_title": "Fire Prevention Route",
+    "act_fire_desc": "Considering the frequency of fires in the Algarve, it is fundamental to verify and sensitize the population to forest fire prevention. Includes a silvo-pastoral system with goats for fuel reduction.",
+
+    "act_marbles_title": "Giant Marbles",
+    "act_marbles_desc": "Playful activity consisting of a game with giant marbles, creating race tracks between two points, taking advantage of the natural slope of the terrain.",
+
+    "act_maze_title": "Labyrinth",
+    "act_maze_desc": "A labyrinth using the natural vegetation of the land (rockrose) in an area of at least 1 hectare, challenging the participants' sense of direction.",
+
+    "act_slides_title": "Slides",
+    "act_slides_desc": "Several dry slides, consisting of closed, transparent tubes crossing the forest up to 125 meters long, offering a new perspective of the space.",
+
+    "act_kids_title": "Playground",
+    "act_kids_desc": "Outdoor recreational area of about 200 square meters dedicated to younger children and pre-adolescents, built with wood or other ecological materials.",
+
+    "services_title": "Services & Infrastructure",
+    
+    "serv_restaurant_title": "Mobile Restaurant",
+    "serv_restaurant_desc": "Leisure and relaxation area with a street food concept, operating with minimal impact on nature and avoiding plastics.",
+    
+    "serv_picnic_title": "Picnic Park",
+    "serv_picnic_desc": "Area reserved for groups and families with wooden tables, benches, and permanent barbecue spots.",
+    
+    "serv_viewpoints_title": "Viewpoints",
+    "serv_viewpoints_desc": "Several viewpoints to rest and contemplate different perspectives of the surrounding natural space, offering shade.",
+
+    "terrain_title": "The Terrain",
+    "terrain_desc": "Located in the Union of parishes of Bensafrim and Barão de São João. A rustic land of 12.5 hectares with dense vegetation, cork oaks, and strawberry trees. The project aims for preservation and reforestation.",
+
+    "footer_contact": "Contact",
+    "footer_address": "Bensafrim and Barão de São João, Lagos, Algarve"
+}

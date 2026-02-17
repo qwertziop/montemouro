@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { writable, derived } from 'svelte/store';
-import en from './messages/en.json';
-import pt from './messages/pt.json';
+import en from '../../messages/en.json';
+import pt from '../../messages/pt.json';
 
 export const defaultLang = 'pt';
 export const languages = ['pt', 'en'];

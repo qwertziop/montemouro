@@ -102,9 +102,7 @@
             <p
                 in:fly={{ y: 50, duration: 1000, delay: 300 }}
                 class="text-xl md:text-2xl text-nature-200 font-light tracking-wide"
-            >
-                {$t("hero_author")}
-            </p>
+            ></p>
             <div in:fly={{ y: 50, duration: 1000, delay: 600 }} class="pt-8">
                 <a
                     href="#intro"

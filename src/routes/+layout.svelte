@@ -2,6 +2,14 @@
 	import "../app.css";
 	import { t, locale, setLocale, languages } from "$lib/i18n.js";
 	import { page } from "$app/stores";
+	import { dev } from "$app/environment";
+	import { injectAnalytics } from "@vercel/analytics/sveltekit";
+
+	let { children } = $props();
+
+	$effect(() => {
+		injectAnalytics({ mode: dev ? "development" : "production" });
+	});
 </script>
 
 <div
@@ -80,7 +88,7 @@
 	</header>
 
 	<main class="flex-grow pt-24">
-		<slot />
+		{@render children()}
 	</main>
 
 	<footer class="bg-nature-950 text-nature-100 py-16">

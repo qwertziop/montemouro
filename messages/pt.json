@@ -87,5 +87,42 @@
     "footer_contact": "Contactos",
     "footer_address_label": "Morada",
     "footer_address": "Bensafrim e Barão de São João, Lagos, Algarve",
-    "contact_location": "Localização"
+    "contact_location": "Localização",
+
+    "infra_title": "Sustentabilidade e Infraestruturas",
+    "infra_water_title": "Abastecimento de Água",
+    "infra_water_desc": "Uso eficiente e sustentável dos recursos hídricos.",
+    "infra_water_detail": "Reutilização de águas cinzentas e sensores eletrónicos para redução do consumo. Abastecimento via poço existente e separação rigorosa de águas.",
+    "infra_energy_title": "Energia Renovável",
+    "infra_energy_desc": "Compromisso com energia 100% limpa.",
+    "infra_energy_detail": "Instalação de sistemas fotovoltaicos para autonomia energética, minimizando a dependência da rede elétrica convencional.",
+    "infra_waste_title": "Gestão de Resíduos",
+    "infra_waste_desc": "Tratamento ecológico e saneamento responsável.",
+    "infra_waste_detail": "Implementação de fossas sépticas ou sanitários sustentáveis, com monitorização municipal e foco na redução de impacto no solo.",
+
+    "terrain_tech_title": "Dados Técnicos",
+    "terrain_loc_label": "Localização",
+    "terrain_loc_val": "Barradinha, Prédio 12 (Bensafrim e Barão de São João)",
+    "terrain_class_label": "Classificação PDM",
+    "terrain_class_val": "Espaços Florestais",
+    "terrain_veg_label": "Flora Existente",
+    "terrain_veg_val": "Sobreiros, Medronheiros, Amendoeiras, Eucaliptos e Mato denso.",
+    "terrain_area_prot": "Área a Proteger (Floresta e vegetação natural)",
+    "terrain_area_rest": "Área de Restaurante (Parcela 4)",
+    "terrain_area_arb": "Arborismo e Parque Infantil (Dentro Parcela 3)",
+    "terrain_area_park": "Parque de estacionamento (Parcela 8 de Mato)",
+    "terrain_area_picnic": "Parque das merendas (Metade da parcela 5)",
+    "terrain_area_multi": "Área Multiusos (Miradouros, caminhos)",
+
+    "audience_title": "Público-Alvo",
+    "audience_families_title": "Famílias e Exploradores",
+    "audience_families_desc": "Uma alternativa ao turismo balnear, oferecendo um espaço onde pais, filhos e avós podem explorar a natureza juntos.",
+    "audience_schools_title": "Escolas e Educação",
+    "audience_schools_desc": "Parcerias pedagógicas para ensino proativo sobre flora, fauna e conservação ambiental.",
+    "audience_tourists_title": "Turismo de Natureza",
+    "audience_tourists_desc": "Para quem procura experiências autênticas e sustentáveis no Algarve rural.",
+
+    "tag_edu": "Educativa",
+    "tag_rec": "Recreativa",
+    "tag_pro": "Proactiva"
 }

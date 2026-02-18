@@ -87,5 +87,42 @@
     "footer_contact": "Contact",
     "footer_address_label": "Mailing Address",
     "footer_address": "Bensafrim and Barão de São João, Lagos, Algarve",
-    "contact_location": "Location"
+    "contact_location": "Location",
+
+    "infra_title": "Sustainability & Infrastructure",
+    "infra_water_title": "Water Supply",
+    "infra_water_desc": "Efficient and sustainable use of water resources.",
+    "infra_water_detail": "Reuse of greywater and electronic sensors to reduce consumption. Supply via existing well and strict separation of water types.",
+    "infra_energy_title": "Renewable Energy",
+    "infra_energy_desc": "Commitment to 100% clean energy.",
+    "infra_energy_detail": "Installation of photovoltaic systems for energy autonomy, minimizing reliance on the conventional electrical grid.",
+    "infra_waste_title": "Waste Management",
+    "infra_waste_desc": "Ecological treatment and responsible sanitation.",
+    "infra_waste_detail": "Implementation of septic tanks or composting toilets, with municipal monitoring and focus on reducing soil impact.",
+
+    "terrain_tech_title": "Technical Data",
+    "terrain_loc_label": "Location",
+    "terrain_loc_val": "Barradinha, Property 12 (Bensafrim and Barão de São João)",
+    "terrain_class_label": "PDM Classification",
+    "terrain_class_val": "Forest Spaces",
+    "terrain_veg_label": "Existing Flora",
+    "terrain_veg_val": "Cork Oaks, Strawberry Trees, Almond Trees, Eucalyptus, and dense scrub.",
+    "terrain_area_prot": "Protected Area (Forest and natural vegetation)",
+    "terrain_area_rest": "Restaurant Area (Parcel 4)",
+    "terrain_area_arb": "Tree Climbing & Playground (Inside Parcel 3)",
+    "terrain_area_park": "Parking (Parcel 8 Scrubland)",
+    "terrain_area_picnic": "Picnic Area (Half of Parcel 5)",
+    "terrain_area_multi": "Multipurpose Area (Viewpoints, paths)",
+
+    "audience_title": "Target Audience",
+    "audience_families_title": "Families & Explorers",
+    "audience_families_desc": "An alternative to beach tourism, offering a space where parents, children, and grandparents can explore nature together.",
+    "audience_schools_title": "Schools & Education",
+    "audience_schools_desc": "Pedagogical partnerships for proactive teaching about flora, fauna, and environmental conservation.",
+    "audience_tourists_title": "Nature Tourism",
+    "audience_tourists_desc": "For those seeking authentic and sustainable experiences in the rural Algarve.",
+
+    "tag_edu": "Educational",
+    "tag_rec": "Recreational",
+    "tag_pro": "Proactive"
 }

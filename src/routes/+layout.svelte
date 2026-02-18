@@ -65,7 +65,7 @@
 					{#each languages as lang}
 						<button
 							type="button"
-							on:click={() => setLocale(lang)}
+							onclick={() => setLocale(lang)}
 							class="px-4 py-1.5 rounded-full transition-all duration-300 {$locale ===
 							lang
 								? 'bg-white shadow-sm text-nature-900'

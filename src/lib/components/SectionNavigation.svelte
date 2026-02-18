@@ -1,13 +1,12 @@
 <script>
-    import { onMount } from "svelte";
     import { t } from "$lib/i18n.js";
 
-    /** @type {Array<{id: string, labelKey: string}>} */
-    export let sections = [];
+    /** @type {{ sections?: Array<{id: string, labelKey: string}> }} */
+    let { sections = [] } = $props();
 
-    let activeSection = "";
+    let activeSection = $state("");
 
-    onMount(() => {
+    $effect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -45,7 +44,7 @@
     {#each sections as section}
         <button
             class="group relative flex items-center justify-end"
-            on:click={() => scrollTo(section.id)}
+            onclick={() => scrollTo(section.id)}
             aria-label="Scroll to {$t(section.labelKey)}"
         >
             <!-- Label Tooltip -->

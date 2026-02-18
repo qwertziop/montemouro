@@ -1,14 +1,15 @@
 <script>
     import { t } from "$lib/i18n.js";
     import { fade, fly, slide } from "svelte/transition";
-    import { onMount } from "svelte";
     import { reveal } from "$lib/actions/reveal.js";
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
 
-    let visible = false;
-    let showTechDetails = false;
+    let visible = $state(false);
+    let showTechDetails = $state(false);
 
-    onMount(() => (visible = true));
+    $effect(() => {
+        visible = true;
+    });
 
     const activities = [
         {
@@ -440,8 +441,6 @@
 
         <div class="grid lg:grid-cols-3 gap-8">
             <!-- Water -->
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <!-- svelte-ignore a11y-no-static-element-interactions -->
             <!-- Water -->
             <div
                 class="bg-nature-900 border border-nature-600 rounded-[2rem] p-10 hover:border-blue-400 transition-all duration-500 group hover:shadow-2xl hover:shadow-blue-900/20 text-left h-full flex flex-col"
@@ -482,9 +481,6 @@
                 </div>
             </div>
 
-            <!-- Energy -->
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <!-- svelte-ignore a11y-no-static-element-interactions -->
             <!-- Energy -->
             <div
                 class="bg-nature-900 border border-nature-600 rounded-[2rem] p-10 hover:border-yellow-400 transition-all duration-500 group hover:shadow-2xl hover:shadow-yellow-900/20 text-left h-full flex flex-col"
@@ -532,8 +528,6 @@
             </div>
 
             <!-- Waste -->
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <!-- svelte-ignore a11y-no-static-element-interactions -->
             <div
                 class="bg-nature-900 border border-nature-600 rounded-[2rem] p-10 hover:border-green-400 transition-all duration-500 group hover:shadow-2xl hover:shadow-green-900/20 text-left h-full flex flex-col"
                 use:reveal={{ delay: 500 }}
@@ -612,8 +606,7 @@
                     <div class="mt-8">
                         <button
                             class="flex items-center gap-2 text-nature-600 hover:text-nature-900 font-bold uppercase tracking-widest text-xs transition-colors"
-                            on:click={() =>
-                                (showTechDetails = !showTechDetails)}
+                            onclick={() => (showTechDetails = !showTechDetails)}
                         >
                             <span>{showTechDetails ? "-" : "+"}</span>
                             {$t("terrain_tech_title")}

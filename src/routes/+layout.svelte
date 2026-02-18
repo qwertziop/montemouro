@@ -20,16 +20,36 @@
 				Monte Mouro
 			</a>
 
-			<nav class="hidden md:flex items-center gap-10">
+			<nav class="hidden md:flex items-center gap-6">
 				<a
 					href="#intro"
 					class="text-xs font-bold uppercase tracking-widest text-nature-600 hover:text-nature-900 transition-colors"
-					>{$t("nav_home")}</a
+					>{$t("nav_intro")}</a
+				>
+				<a
+					href="#audience"
+					class="text-xs font-bold uppercase tracking-widest text-nature-600 hover:text-nature-900 transition-colors"
+					>{$t("nav_audience")}</a
+				>
+				<a
+					href="#objectives"
+					class="text-xs font-bold uppercase tracking-widest text-nature-600 hover:text-nature-900 transition-colors"
+					>{$t("nav_objectives")}</a
 				>
 				<a
 					href="#activities"
 					class="text-xs font-bold uppercase tracking-widest text-nature-600 hover:text-nature-900 transition-colors"
 					>{$t("nav_activities")}</a
+				>
+				<a
+					href="#services"
+					class="text-xs font-bold uppercase tracking-widest text-nature-600 hover:text-nature-900 transition-colors"
+					>{$t("nav_services")}</a
+				>
+				<a
+					href="#infrastructure"
+					class="text-xs font-bold uppercase tracking-widest text-nature-600 hover:text-nature-900 transition-colors"
+					>{$t("nav_infrastructure")}</a
 				>
 				<a
 					href="#contact"

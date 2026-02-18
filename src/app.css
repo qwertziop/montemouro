@@ -22,3 +22,26 @@
         @apply font-display text-nature-900;
     }
 }
+
+/* Custom Scrollbar - Dark Forest Theme */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #101d11;
+    /* nature-950 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2f5530;
+    /* nature-700 */
+    border-radius: 5px;
+    border: 2px solid #101d11;
+    /* Creates a padding effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4d874d;
+    /* nature-500 */
+}

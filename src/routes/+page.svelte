@@ -2,6 +2,8 @@
     import { t } from "$lib/i18n.js";
     import { fade, fly, slide } from "svelte/transition";
     import { onMount } from "svelte";
+    import { reveal } from "$lib/actions/reveal.js";
+    import SectionNavigation from "$lib/components/SectionNavigation.svelte";
 
     let visible = false;
     let showTechDetails = false;
@@ -132,7 +134,10 @@
 <section id="intro" class="py-32 bg-earth-50 relative overflow-hidden">
     <div class="container mx-auto px-6 max-w-5xl">
         <div class="grid md:grid-cols-12 gap-12 md:gap-24 items-start">
-            <div class="md:col-span-4 md:sticky md:top-32">
+            <div
+                class="md:col-span-4 md:sticky md:top-32"
+                use:reveal={{ delay: 200 }}
+            >
                 <h2
                     class="text-4xl md:text-6xl font-display font-medium text-nature-900 mb-8 leading-tight"
                 >
@@ -180,7 +185,7 @@
 </section>
 
 <!-- Target Audience -->
-<section class="py-24 bg-white border-y border-nature-200/50">
+<section id="audience" class="py-24 bg-white border-y border-nature-200/50">
     <div class="container mx-auto px-6 max-w-7xl">
         <div class="text-center mb-16">
             <h2
@@ -247,7 +252,7 @@
 </section>
 
 <!-- Objectives -->
-<section class="py-32 bg-nature-100 text-nature-900 relative">
+<section id="objectives" class="py-32 bg-nature-100 text-nature-900 relative">
     <div class="container mx-auto px-6 max-w-7xl">
         <div class="text-center mb-24 max-w-3xl mx-auto">
             <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">
@@ -258,7 +263,10 @@
             ></div>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div
+            class="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+            use:reveal={{ delay: 200, threshold: 0.1 }}
+        >
             {#each ["obj_list_1", "obj_list_2", "obj_list_3", "obj_list_4", "obj_list_5", "obj_list_6", "obj_list_7", "obj_list_8"] as objKey, i}
                 <div
                     class="group p-8 bg-white/60 hover:bg-white transition-all duration-500 rounded-3xl hover:shadow-xl hover:-translate-y-2 border border-nature-200/50"
@@ -355,7 +363,7 @@
 </section>
 
 <!-- Services -->
-<section class="py-32 bg-earth-50">
+<section id="services" class="py-32 bg-earth-50">
     <div class="container mx-auto px-6 max-w-7xl">
         <h2
             class="text-4xl md:text-5xl font-display font-bold text-center mb-24 text-nature-900"
@@ -363,7 +371,10 @@
             {$t("services_title")}
         </h2>
 
-        <div class="grid md:grid-cols-3 gap-12 text-center">
+        <div
+            class="grid md:grid-cols-3 gap-12 text-center"
+            use:reveal={{ delay: 200, threshold: 0.1 }}
+        >
             <div class="space-y-6 group cursor-default">
                 <div
                     class="h-64 w-full bg-white rounded-t-[10rem] rounded-b-3xl mb-8 flex items-center justify-center shadow-lg shadow-earth-200/50 group-hover:-translate-y-4 transition-transform duration-500"
@@ -411,7 +422,10 @@
 </section>
 
 <!-- Sustainability & Infrastructure -->
-<section class="py-32 bg-nature-950 text-nature-50 relative overflow-hidden">
+<section
+    id="infrastructure"
+    class="py-32 bg-nature-950 text-nature-50 relative overflow-hidden"
+>
     <!-- Decorative background elements -->
     <div
         class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-nature-800/20 to-transparent"
@@ -431,6 +445,7 @@
             <!-- Water -->
             <div
                 class="bg-nature-900 border border-nature-600 rounded-[2rem] p-10 hover:border-blue-400 transition-all duration-500 group hover:shadow-2xl hover:shadow-blue-900/20 text-left h-full flex flex-col"
+                use:reveal={{ delay: 100 }}
             >
                 <div class="flex items-start justify-between mb-8">
                     <div
@@ -473,6 +488,7 @@
             <!-- Energy -->
             <div
                 class="bg-nature-900 border border-nature-600 rounded-[2rem] p-10 hover:border-yellow-400 transition-all duration-500 group hover:shadow-2xl hover:shadow-yellow-900/20 text-left h-full flex flex-col"
+                use:reveal={{ delay: 300 }}
             >
                 <div class="flex items-start justify-between mb-8">
                     <div
@@ -520,6 +536,7 @@
             <!-- svelte-ignore a11y-no-static-element-interactions -->
             <div
                 class="bg-nature-900 border border-nature-600 rounded-[2rem] p-10 hover:border-green-400 transition-all duration-500 group hover:shadow-2xl hover:shadow-green-900/20 text-left h-full flex flex-col"
+                use:reveal={{ delay: 500 }}
             >
                 <div class="flex items-start justify-between mb-8">
                     <div
@@ -766,3 +783,15 @@
         </div>
     </div>
 </section>
+
+<SectionNavigation
+    sections={[
+        { id: "intro", labelKey: "nav_intro" },
+        { id: "audience", labelKey: "nav_audience" },
+        { id: "objectives", labelKey: "nav_objectives" },
+        { id: "activities", labelKey: "nav_activities" },
+        { id: "services", labelKey: "nav_services" },
+        { id: "infrastructure", labelKey: "nav_infrastructure" },
+        { id: "contact", labelKey: "nav_contact" },
+    ]}
+/>

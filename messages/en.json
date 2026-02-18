@@ -8,8 +8,11 @@
     
     "nav_home": "Home",
     "nav_intro": "Introduction",
+    "nav_audience": "Target Audience",
     "nav_objectives": "Objectives",
     "nav_activities": "Activities",
+    "nav_services": "Services",
+    "nav_infrastructure": "Infrastructure",
     "nav_contact": "Contact",
 
     "intro_title": "Introduction",

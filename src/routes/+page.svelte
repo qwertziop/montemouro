@@ -584,7 +584,7 @@
 
     <div class="container mx-auto px-6 max-w-6xl relative z-10">
         <div
-            class="bg-nature-50 rounded-[3rem] p-12 md:p-24 shadow-2xl relative overflow-hidden"
+            class="bg-nature-50 rounded-[3rem] p-6 md:p-24 shadow-2xl relative overflow-hidden"
         >
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
@@ -605,17 +605,20 @@
 
                     <div class="mt-8">
                         <button
-                            class="flex items-center gap-2 text-nature-600 hover:text-nature-900 font-bold uppercase tracking-widest text-xs transition-colors"
+                            class="flex items-center gap-2 px-6 py-3 rounded-full border border-nature-300 text-nature-700 hover:text-nature-900 hover:border-nature-900 hover:bg-white font-bold uppercase tracking-widest text-xs transition-all duration-300 group"
                             onclick={() => (showTechDetails = !showTechDetails)}
                         >
-                            <span>{showTechDetails ? "-" : "+"}</span>
+                            <span
+                                class="w-4 h-4 flex items-center justify-center bg-nature-200 rounded-full text-[10px] group-hover:bg-nature-900 group-hover:text-white transition-colors"
+                                >{showTechDetails ? "-" : "+"}</span
+                            >
                             {$t("terrain_tech_title")}
                         </button>
 
                         {#if showTechDetails}
                             <div
                                 transition:slide
-                                class="mt-6 bg-white/50 rounded-2xl p-6 text-sm border border-nature-200"
+                                class="mt-6 bg-white/50 rounded-2xl p-4 text-sm border border-nature-200"
                             >
                                 <dl
                                     class="grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2"
@@ -741,7 +744,7 @@
                         {/if}
                     </div>
 
-                    <div class="space-y-4 pt-8 border-t border-nature-200">
+                    <div class="space-y-4 pt-8">
                         <div class="flex items-start gap-4">
                             <div
                                 class="w-6 h-6 rounded-full bg-nature-200 mt-1"
